@@ -22,16 +22,25 @@ PRPLL implements two primality tests for Mersenne numbers: PRP ("PRobable Prime"
 
 PRPLL is an OpenCL (GPU) program for primality testing Mersenne numbers.
 
-
 ## Build
 
 Invoke `make` in the source directory.
 Multi-threaded build (`make -j$(nproc)`) is supported for the impatient.
 
+## Pre-built binaries
+
+You can get pre-built binaries from the "Actions" tab on GitHub. Click the commit you want and go to section "Artifacts".
 
 ## Use
+
 See `prpll -h` for the command line options.
 
+You may want to copy the `tune.txt` found in project root directory alongside the `prpll` binary.
+Alternatively you may want to run `prpll -tune` to generate your own.
+
+`prpll` may have additional dependencies. If you don't have them, the program will not launch.
+On Linux and MSYS2 (Windows), you can use `ldd` to list what libraries it requires and that you may be missing.
+On macOS `otool -L` can be used.
 
 ## Work types supported
 
