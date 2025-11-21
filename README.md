@@ -29,7 +29,7 @@ Multi-threaded build (`make -j$(nproc)`) is supported for the impatient.
 
 ## Pre-built binaries
 
-You can get pre-built binaries from the "Actions" tab on GitHub. Click the commit you want and go to section "Artifacts".
+You can get pre-built binaries from [nightly.link](https://nightly.link/preda/gpuowl/workflows/ci/master). This is identical to going to the "Actions" tab on GitHub, choosing the latest commit, then to section "Artifacts".
 
 ## Use
 
